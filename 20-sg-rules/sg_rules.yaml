@@ -1,0 +1,5 @@
+mongodb:
+- name: mongodb_catalogue   # mongodb accepting connections from catalogue
+  port: 27017
+  src: catalogue
+  dest: mongodb
