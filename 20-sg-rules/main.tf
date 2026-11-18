@@ -1,19 +1,20 @@
-resource "aws_security_group_rule" "bastion_myip" {
+/* resource "aws_security_group_rule" "bastion_myip" {
   type                          = "ingress"
   from_port                     = 22
   to_port                       = 22
   protocol                      = "tcp"
   source_security_group_id      = local.myip
   security_group_id             = local.bastion_sg_id
-}
+} */
 
-resource "aws_security_group_rule" "mongodb_bastion" {
+/* resource "aws_security_group_rule" "mongodb_bastion" {
   type                          = "ingress"
   from_port                     = 22
   to_port                       = 22
   protocol                      = "tcp"
   source_security_group_id      = local.bastion_sg_id
   security_group_id             = local.mongodb_sg_id
+} */
 
 
 resource "aws_security_group_rule" "mongodb_catalogue" {
